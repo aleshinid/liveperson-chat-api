@@ -1,0 +1,33 @@
+{
+  "name": "liveperson-chat-api",
+  "version": "3.0.0",
+  "description": "LivePerson Chat API",
+  "main": "src/lpChat.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cherrytech/liveperson-chat-api.git"
+  },
+  "keywords": [
+    "liveperson",
+    "chat",
+    "api"
+  ],
+  "author": "Dominic Watson <dominic.watson@cherrygroup.com>",
+  "contributors": [
+    "Joao Dias <joao.dias@cherrygroup.com>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cherrytech/liveperson-chat-api/issues"
+  },
+  "homepage": "https://github.com/cherrytech/liveperson-chat-api#readme",
+  "devDependencies": {
+    "eslint": "~1.10.3",
+    "uglifyjs": "~2.4.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cp ./src/lpChat.js ./dist && uglifyjs -c -m -o ./dist/lpChat.min.js ./src/lpChat.js",
+    "lint": "eslint ./src"
+  }
+}

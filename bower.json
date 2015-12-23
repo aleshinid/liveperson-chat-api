@@ -1,19 +1,22 @@
 {
-  "name": "liveperson",
+  "name": "liveperson-chat-api",
   "version": "3.0.0",
-  "homepage": "https://github.com/intellix/bower-liveperson",
+  "homepage": "https://github.com/cherrytech/liveperson-chat-api#readme",
   "authors": [
-    "Dominic Watson <dominic@euroslots.com>"
+    "Dominic Watson <dominic.watson@cherrygroup.com>",
+    "Joao Dias <joao.dias@cherrygroup.com>"
   ],
-  "description": "LivePerson API",
-  "main": "liveperson.min.js",
+  "description": "LivePerson Chat API",
+  "main": "dist/lpChat.min.js",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "liveperson"
+    "liveperson",
+    "chat",
+    "api"
   ],
-  "license": "MIT",
+  "license": "ISC",
   "ignore": [
     "**/.*",
     "node_modules",
