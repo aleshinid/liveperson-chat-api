@@ -5495,16 +5495,16 @@ lpTag.taglets.ChatOverRestAPI = lpTag.taglets.ChatOverRestAPI || function ChatOv
                 sentRequest: an,
                 response: ap
             });
-            if (ap && ap.headers && ap.headers.Location) {
+            if (ap && ap.headers && (ap.headers.Location || ap.headers.location)) {
                 Y.addRels({
                     link: [{
                         "@rel": "location",
-                        "@href": ap.headers.Location
+                        "@href": (ap.headers.Location || ap.headers.location)
                     }]
                 }, {
                     type: "chat"
                 });
-                S.storeChatLocationURI(ap.headers.Location, ak);
+                S.storeChatLocationURI((ap.headers.Location || ap.headers.location), ak);
                 if (ak) {
                     ab.initialised = false;
                 }
